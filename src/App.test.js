@@ -5,10 +5,10 @@ import '@testing-library/jest-dom/extend-expect';
 
 import App from './App';
 
-describe("Test Toggle using Enzyme", () => {
+describe("Test Toggle using Enzyme", () => {    
+  afterEach(cleanup);
+  
   it("render Toggle component", () => {
-    afterEach(cleanup);
-
     const { getByText, queryByText, getByDisplayValue } = render(<App/>)
 
     expect(getByText("On")).toBeDefined();
