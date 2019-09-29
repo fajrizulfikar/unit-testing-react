@@ -8,7 +8,7 @@ import App from './App';
 describe("Test Toggle using React Testing Library", () => {    
   afterEach(cleanup);
   
-  it("render Toggle component", () => {
+  it("Toggle click", () => {
     const { getByText, queryByText, getByDisplayValue } = render(<App/>)
 
     expect(getByText("On")).toBeDefined();
