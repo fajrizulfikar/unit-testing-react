@@ -5,7 +5,7 @@ import '@testing-library/jest-dom/extend-expect';
 
 import App from './App';
 
-describe("Test Toggle using Enzyme", () => {    
+describe("Test Toggle using React Testing Library", () => {    
   afterEach(cleanup);
   
   it("render Toggle component", () => {
